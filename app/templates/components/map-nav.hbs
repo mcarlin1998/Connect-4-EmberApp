@@ -1,0 +1,12 @@
+<div>
+  {{#if running}}
+  <button {{action 'step'}}>Step</button>
+  {{else}}
+    {{#if ready}}
+      <button {{action 'start'}}>Start</button>
+    {{else}}
+      <button {{action 'clear'}}>Clear</button>
+    {{/if}}
+  {{/if}}
+</div>
+<canvas id="stage" width="380" height="380"></canvas>
